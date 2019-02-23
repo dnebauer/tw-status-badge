@@ -1,0 +1,11 @@
+created: 20181203212737578
+creator: Mohammad
+modified: 20190223074601000
+modifier: David Nebauer
+tags: $:/tags/Macro
+title: $:/plugins/.dtn/status-badge/macros
+type: text/vnd.tiddlywiki
+
+\define sbadge(subject,status, type:"primary")
+<div class="sbadge"><span class="sbadge-subject">$subject$</span><span class="sbadge-status sbadge-$type$ ">$status$</span></div>
+\end

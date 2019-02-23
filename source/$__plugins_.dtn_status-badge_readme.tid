@@ -1,0 +1,52 @@
+created: 20181204193605622
+creator: Mohammad
+modified: 20190223074637000
+modifier: David Nebauer
+title: $:/plugins/.dtn/status-badge/readme
+type: text/vnd.tiddlywiki
+
+! Status badges
+
+This plugin consists of a macro and a stylesheet.
+
+The status badges made available by the plugin are double badges in two semantic colours. The badges are used to indicate values such as coverage, version, relation, and progress.
+
+! Using status badges
+
+Status badges are created using the provided macro //sbadge//.
+
+The syntax is:
+
+```
+<<sbadge subject status type>>
+```
+
+where athe attributes are
+
+|    subject|the subject of badge|
+|     status|the relation, status, coverage, ...|
+|       type|semantic type: //primary//, //info//, //success//, //warning//, or //danger// -- default is  //primary//|
+
+The status badges have five possible semantic colours based on the //type// attribute:
+
+<<sbadge "primary" "blue" primary>> <<sbadge "info" "cyan" info>> <<sbadge "success" "green" success>> <<sbadge "warning" "yellow" warning>> <<sbadge "danger" "red" danger>>
+
+! Examples
+
+```
+<<sbadge "Tiddlywiki" "5.1.18" "info">>
+<<sbadge "Node.js" "passed">>
+<<sbadge "Windows" "7, 8.1, 10" "warning">>
+<<sbadge "Android" "supported" "danger">>
+<<sbadge "coverage" "Html5" "success">>
+```
+
+<<sbadge "Tiddlywiki" "5.1.18" "info">> <<sbadge "Node.js" "passed">> <<sbadge "Windows" "7, 8.1, 10" "warning">> <<sbadge "Android" "supported" "danger">> <<sbadge "Coverage" "Html5" "success">>
+
+```
+<<sbadge "Tiddlywiki" "I love it">> 
+<<sbadge "Jeremy Ruston" "The creator" success>>
+<<sbadge "Forum" "The best in the world" danger>>
+```
+
+<<sbadge "Tiddlywiki" "I love it">> <<sbadge "Jeremy Ruston" "The creator" success>> <<sbadge "Forum" "The best in the world" danger>>

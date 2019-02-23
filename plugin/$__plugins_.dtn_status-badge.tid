@@ -1,0 +1,73 @@
+author: David Nebauer
+core-version: >=5.1.18
+created: 20190223080027642
+description: Status Badge
+list: readme credits license
+modified: 20190223080027642
+plugin-type: plugin
+title: $:/plugins/.dtn/status-badge
+type: application/json
+version: 0.0.4
+
+{
+    "tiddlers": {
+        "$:/plugins/.dtn/status-badge/credits": {
+            "text": "This plugin is a packaging of tiddlers made available by Mohammad Rahmani ([[github|https://github.com/kookma]], [[email|mailto:m.rahmani@aut.ac.ir]]) at [[https://kookma.github.io/status-badge/]].\n\nThis plugin is distributed under the same license as Mohammad's scripts.\n",
+            "bag": "default",
+            "revision": "0",
+            "type": "text/vnd.tiddlywiki",
+            "title": "$:/plugins/.dtn/status-badge/credits",
+            "tags": "",
+            "modifier": "David Nebauer",
+            "modified": "20190223074452000",
+            "creator": "David Nebauer",
+            "created": "20190223074408000"
+        },
+        "$:/plugins/.dtn/status-badge/license": {
+            "text": "Distributed under an MIT license.\n\nCopyright (c) 2019 [[David Nebauer|https://github.com/dnebauer]]\n\n<<<\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n<<<\n",
+            "bag": "default",
+            "revision": "0",
+            "type": "application/x-tiddler",
+            "title": "$:/plugins/.dtn/status-badge/license",
+            "modifier": "David Nebauer",
+            "modified": "20190223074512000",
+            "creator": "Mohammad",
+            "created": "20181101134530634"
+        },
+        "$:/plugins/.dtn/status-badge/macros": {
+            "text": "\\define sbadge(subject,status, type:\"primary\")\n<div class=\"sbadge\"><span class=\"sbadge-subject\">$subject$</span><span class=\"sbadge-status sbadge-$type$ \">$status$</span></div>\n\\end\n",
+            "bag": "default",
+            "revision": "0",
+            "type": "text/vnd.tiddlywiki",
+            "title": "$:/plugins/.dtn/status-badge/macros",
+            "tags": "$:/tags/Macro",
+            "modifier": "David Nebauer",
+            "modified": "20190223074601000",
+            "creator": "Mohammad",
+            "created": "20181203212737578"
+        },
+        "$:/plugins/.dtn/status-badge/readme": {
+            "text": "! Status badges\n\nThis plugin consists of a macro and a stylesheet.\n\nThe status badges made available by the plugin are double badges in two semantic colours. The badges are used to indicate values such as coverage, version, relation, and progress.\n\n! Using status badges\n\nStatus badges are created using the provided macro //sbadge//.\n\nThe syntax is:\n\n```\n<<sbadge subject status type>>\n```\n\nwhere athe attributes are\n\n|    subject|the subject of badge|\n|     status|the relation, status, coverage, ...|\n|       type|semantic type: //primary//, //info//, //success//, //warning//, or //danger// -- default is  //primary//|\n\nThe status badges have five possible semantic colours based on the //type// attribute:\n\n<<sbadge \"primary\" \"blue\" primary>> <<sbadge \"info\" \"cyan\" info>> <<sbadge \"success\" \"green\" success>> <<sbadge \"warning\" \"yellow\" warning>> <<sbadge \"danger\" \"red\" danger>>\n\n! Examples\n\n```\n<<sbadge \"Tiddlywiki\" \"5.1.18\" \"info\">>\n<<sbadge \"Node.js\" \"passed\">>\n<<sbadge \"Windows\" \"7, 8.1, 10\" \"warning\">>\n<<sbadge \"Android\" \"supported\" \"danger\">>\n<<sbadge \"coverage\" \"Html5\" \"success\">>\n```\n\n<<sbadge \"Tiddlywiki\" \"5.1.18\" \"info\">> <<sbadge \"Node.js\" \"passed\">> <<sbadge \"Windows\" \"7, 8.1, 10\" \"warning\">> <<sbadge \"Android\" \"supported\" \"danger\">> <<sbadge \"Coverage\" \"Html5\" \"success\">>\n\n```\n<<sbadge \"Tiddlywiki\" \"I love it\">> \n<<sbadge \"Jeremy Ruston\" \"The creator\" success>>\n<<sbadge \"Forum\" \"The best in the world\" danger>>\n```\n\n<<sbadge \"Tiddlywiki\" \"I love it\">> <<sbadge \"Jeremy Ruston\" \"The creator\" success>> <<sbadge \"Forum\" \"The best in the world\" danger>>\n",
+            "bag": "default",
+            "revision": "0",
+            "type": "text/vnd.tiddlywiki",
+            "title": "$:/plugins/.dtn/status-badge/readme",
+            "modifier": "David Nebauer",
+            "modified": "20190223074637000",
+            "creator": "Mohammad",
+            "created": "20181204193605622"
+        },
+        "$:/plugins/.dtn/status-badge/stylesheet": {
+            "text": "/*Credits: \nNishant Srivastava https://codepen.io/nisrulz/pen/bpQWLW\nMohammad Rahmani: https://kookma.github.io/status-badge/\n*/\n.sbadge {\n display: inline-block;\n margin: 0.0em;\n}\n.sbadge > span {\n  color: #ffffff;\n  font-size: 0.8em;\n  font-weight: 400;\n  line-height: 1;\n  padding: .2em .6em;\n  text-align: center;\n  vertical-align: baseline;\n  white-space: nowrap;}\n\n.sbadge-subject{\n  background-color: #656565;\n  border-bottom-left-radius: 0.25em;\n  border-top-left-radius: 0.25em;}\n.sbadge-status {\n  border-bottom-right-radius: 0.25em;\n  border-top-right-radius: 0.25em;}\n\n.sbadge-primary {\n    background-color: #337ab7;}\n.sbadge-success {\n    background-color: #5cb85c;}\n.sbadge-info {\n    background-color: #5bc0de;}\n.sbadge-warning {\n    background-color: #f0ad4e;}\n.sbadge-danger {\n    background-color: #d9534f;}\n",
+            "bag": "default",
+            "revision": "0",
+            "type": "text/css",
+            "title": "$:/plugins/.dtn/status-badge/stylesheet",
+            "tags": "$:/tags/Stylesheet",
+            "modifier": "David Nebauer",
+            "modified": "20190223074752000",
+            "creator": "Mohammad",
+            "created": "20181204192835967"
+        }
+    }
+}
