@@ -7,7 +7,7 @@ See that site for a description of what this plugin does. Note that the macro
 has been renamed from _dbadge_ to _sbadge_ to avoid any namespace collisions.
 
 Install plugin file
-[$__plugins_.dtn_status-badge.tid](https://github.com/dnebauer/tw-status-badge/blob/master/plugin/$__plugins_.dtn_status-badge.tid) by:
+[$\__plugins_.dtn_status-badge.tid](https://github.com/dnebauer/tw-status-badge/blob/master/plugin/$__plugins_.dtn_status-badge.tid) by:
 
 * Dragging and dropping it into your wiki, or
 * Saving the plugin tiddler file and importing it into your wiki.
