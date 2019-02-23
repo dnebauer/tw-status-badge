@@ -6,14 +6,17 @@ style:  [Standard, Latex14pt]
         # Latex8-12|14|17|20pt; PaginateSections; IncludeFiles
 ---
 
-# Credit #
+# Packaging tiddlywiki plugin "Status Badge" #
+
+
+## Credit ##
 
 This is a packaging of macros made available by Mohammad Rahmani at
 [https://kookma.github.io/status-badge/](). The plugin readme tiddler is a
 slight edit of the Mohammad Rahmani's original
 [demo](https://kookma.github.io/status-badge/#.mr%2Fdemo%2Fdbadge) tiddler.
 
-# Ensure correct tiddlywiki setup #
+## Ensure correct tiddlywiki setup ##
 
 These instructions assume tiddlywiki is running under nodejs with tiddlers
 saved to individual files rather than a single-file wiki.
@@ -24,7 +27,7 @@ These instructions are for packaging the plugin using Tinka
 installed in the tiddlywiki -- this requires restarting the tiddlywiki server
 after installing the plugin.
 
-# Uninstall the previous version #
+## Uninstall the previous version ##
 
 Skip this section if the plugin is not currently installed in the tiddlywiki
 you intend to use for packaging.
@@ -41,11 +44,11 @@ Follow these steps:
 
 4. Restart the tiddlywiki server.
 
-# Package using Tinka #
+## Package using Tinka ##
 
 Open _Control Panel_ > _Tinka Plugin Management_ tab > _Create a new Plugin_ tab.
 
-## Step 1: Enter Metadata ##
+### Step 1: Enter Metadata ###
 
 Enter the following metadata values:
 
@@ -61,7 +64,7 @@ Enter the following metadata values:
 |     Version|_0.0.1_ or _increment previous version_|
 |Core-Version|>=5.1.18                               |
 
-## Step 2: Add Tiddlers ##
+### Step 2: Add Tiddlers ###
 
 Search for the key phrase `status-badge` and select the following tiddlers:
 
@@ -71,7 +74,7 @@ Search for the key phrase `status-badge` and select the following tiddlers:
 * \$:/plugins/.dtn/status-badge/readme
 * \$:/plugins/.dtn/status-badge/stylesheet
 
-## Step 3: Package ##
+### Step 3: Package ###
 
 Press the _Package plugin_ button.
 
@@ -82,7 +85,7 @@ the wiki in your browser.
 Warning: the tiddlers selected in Step 2 are deleted when the plugin file is
 built.
 
-# Save plugin file #
+## Save plugin file ##
 
 Delete any files in the `plugin` subdirectory.
 
