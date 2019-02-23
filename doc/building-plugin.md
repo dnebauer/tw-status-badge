@@ -1,11 +1,3 @@
----
-title:  "Packaging plugin: status-badge"
-author: "David Nebauer"
-date:   "23 February 2019"
-style:  [Standard, Latex14pt]
-        # Latex8-12|14|17|20pt; PaginateSections; IncludeFiles
----
-
 # Packaging tiddlywiki plugin "Status Badge" #
 
 
