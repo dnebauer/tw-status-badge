@@ -82,6 +82,6 @@ built.
 Delete any files in the `plugin` subdirectory.
 
 The plugin file is located in `'<wiki_root>/tiddlers/'` and named
-`'$__plugins_.dtn_latex-logos.tid'`.
+`'$__plugins_.dtn_status-badge.tid'`.
 
 Save a copy of the plugin file to the `plugin` subdirectory.
