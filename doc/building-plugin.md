@@ -1,6 +1,5 @@
 # Packaging tiddlywiki plugin "Status Badge" #
 
-
 ## Credit ##
 
 This is a packaging of macros made available by Mohammad Rahmani at
