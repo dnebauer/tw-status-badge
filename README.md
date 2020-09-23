@@ -9,7 +9,7 @@ has been renamed from _dbadge_ to _sbadge_ to avoid any namespace collisions.
 ## Installation ##
 
 Install plugin file
-[$\_\_plugins\_.dtn\_status-badge.json](https://github.com/dnebauer/tw-status-badge/blob/master/plugin/%24__plugins_.dtn_status-badge.json) by:
+[$\_\_plugins\_kookma\_dbadge.json](https://github.com/dnebauer/tw-status-badge/blob/master/%24__plugins_kookma_dbadge.json) by:
 
 * Dragging and dropping it into your wiki, or
 * Saving the plugin tiddler file and importing it into your wiki.
